@@ -195,6 +195,6 @@ for record in soup.find('tbody').findAll('tr'):
 
     
 
-with open("athletedataKHeng.csv", "a", encoding="utf-8") as file:
+with open("athletedata.csv", "a", encoding="utf-8") as file:
     for item in athleteList:
         file.write("%s\n" %item)
