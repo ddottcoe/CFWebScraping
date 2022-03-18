@@ -114,6 +114,11 @@ for record in soup.find('tbody').findAll('tr'):
     counter = 0 #we need to handle unaffiliated athletes
     personDescription = []
     
+
+    #Code below here is to parse the athlete data 
+    #things like age, weight, height etc...
+    #there is a lot of conditionals because the format of each person can differ
+    #the unit of measure can also differ to so we convert from the metric system
     counter = 0
     for item in data:
         if 'Age' in item.text:
